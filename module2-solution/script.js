@@ -1,16 +1,22 @@
-( function () {
-
-    var names = {John , Jay , Jack , Jude , Jean , Rosie , Richard , Jason}
-    for ( var i =0 ; i<names.length; i++){
-    var firstLetter = names[i].charAt(0).tolowerCase();
-    if ( firstLetter == 'J' || firstLetter == 'j'){
-     goodbyespeaker.speak()
+(function () {
+  var names = [
+    "Yaakov",
+    "John",
+    "Jen",
+    "Jason",
+    "Paul",
+    "Frank",
+    "Larry",
+    "Paula",
+    "Laura",
+    "Jim",
+  ];
+  for (var i = 0; i < names.length; i++) {
+    var firstLetter = names[i].charAt(0).toLowerCase();
+    if (firstLetter === "j") {
+      byeSpeaker.speak(names[i]);
+    } else {
+      helloSpeaker.speak(names[i]);
     }
-     
-     else {
-     hellospeaker.speak(names[i]);
-     }
-    
-    }
-    
-    })();   
+  }
+})();
